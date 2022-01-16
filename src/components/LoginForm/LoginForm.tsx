@@ -2,52 +2,40 @@ import React from "react";
 
 const LoginForm = () => {
   return (
-    <div className="h-screen bg-gradient-to-br from-blue-600 to-indigo-600 flex justify-center items-center w-full">
+    <div className="h-screen bg-gray-800 flex justify-center items-center w-full">
       <form>
         <div className="bg-white px-10 py-8 rounded-xl w-screen shadow-md max-w-sm">
           <div className="space-y-4">
             <h1 className="text-center text-2xl font-semibold text-gray-600">
-              Register
+              펫에버 관리자
             </h1>
             <div>
               <label
                 htmlFor="email"
-                className="block mb-1 text-gray-600 font-semibold"
+                className="text-left block mb-1 text-gray-600 font-semibold"
               >
-                Username
+                이메일
               </label>
               <input
-                type="text"
+                type="email"
                 className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full"
               />
             </div>
             <div>
               <label
-                htmlFor="email"
-                className="block mb-1 text-gray-600 font-semibold"
+                htmlFor="password"
+                className="text-left block mb-1 text-gray-600 font-semibold"
               >
-                Email
+                비밀번호
               </label>
               <input
-                type="text"
-                className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="email"
-                className="block mb-1 text-gray-600 font-semibold"
-              >
-                Password
-              </label>
-              <input
-                type="text"
+                type="password"
                 className="bg-indigo-50 px-4 py-2 outline-none rounded-md w-full"
               />
             </div>
           </div>
-          <button className="mt-4 w-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-indigo-100 py-2 rounded-md text-lg tracking-wide">
-            Register
+          <button className="mt-4 w-full bg-gray-800 text-indigo-100 py-2 rounded-md text-lg tracking-wide">
+            로그인
           </button>
         </div>
       </form>
