@@ -2,9 +2,10 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Layout from "./components/common/Layout";
-import PostWrite from "./components/common/PostWrite";
+
 import Login from "./pages/Login";
 import Magazine from "./pages/Magazine";
+import WritePage from "./pages/WritePage";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/post" element={<PostWrite />} />
+          <Route path="/post" element={<WritePage />} />
           <Route element={<Layout />}>
             <Route path="/magazine" element={<Magazine />} />
           </Route>

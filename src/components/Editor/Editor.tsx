@@ -1,11 +1,9 @@
-import axios from "axios";
-import { useMemo, useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-const PostWrite = () => {
+const Editor = () => {
   const QuillRef = useRef<ReactQuill>();
   const [contents, setContents] = useState("");
-
   const modules = useMemo(
     () => ({
       toolbar: {
@@ -46,33 +44,27 @@ const PostWrite = () => {
   );
 
   return (
-    <section>
-      <div>
-        <h2>Petever</h2>
-        <button>발행</button>
-        <div>
-          <input
-            type="text"
-            placeholder="제목을 입력해주세요."
-            maxLength={30}
-          />
-        </div>
-        <ReactQuill
-          ref={(element) => {
-            if (element !== null) {
-              QuillRef.current = element;
-            }
-          }}
-          value={contents}
-          onChange={setContents}
-          modules={modules}
-          formats={formats}
-          theme="snow"
-          placeholder="내용을 입력해주세요."
-        />
-      </div>
-    </section>
+    <div className="max-w-4xl mx-auto ">
+      <input
+        type="text"
+        className="text-3xl py-4 w-full border-b-2"
+        placeholder="제목을 입력하세요."
+      />
+      <ReactQuill
+        ref={(element) => {
+          if (element !== null) {
+            QuillRef.current = element;
+          }
+        }}
+        value={contents}
+        onChange={setContents}
+        modules={modules}
+        formats={formats}
+        theme="snow"
+        placeholder="내용을 입력해주세요."
+      />
+    </div>
   );
 };
 
-export { PostWrite };
+export { Editor };

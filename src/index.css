@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ql-editor {
+  padding: 15px 0 !important;
+  min-height: 320px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+.ql-editor.ql-blank::before {
+  left: 0 !important;
+  font-style: normal !important;
+}
+.ql-toolbar.ql-snow {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0 !important;
+  z-index: 11;
+}
+.ql-container.ql-snow {
+  border: 0 !important;
+}
+.ql-snow .ql-editor img {
+  display: inline-block;
+}
