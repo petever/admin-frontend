@@ -12,9 +12,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="/post" element={<PostWrite />} />
           <Route element={<Layout />}>
             <Route path="/magazine" element={<Magazine />} />
-            <Route path="/post" element={<PostWrite />} />
           </Route>
         </Routes>
       </BrowserRouter>
