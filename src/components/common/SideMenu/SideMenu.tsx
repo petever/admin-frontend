@@ -6,7 +6,7 @@ const SideMenu = () => {
     <nav className="h-screen bg-gray-800">
       <ul className="text-white p-4 text-left">
         <li>
-          <Link to="/magazine">매거진 관리</Link>
+          <Link to="/life">라이프 관리</Link>
         </li>
       </ul>
     </nav>

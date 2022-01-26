@@ -4,7 +4,7 @@ import "./App.css";
 import Layout from "./components/common/Layout";
 
 import Login from "./pages/Login";
-import Magazine from "./pages/Magazine";
+import LifePage from "./pages/LifePage";
 import WritePage from "./pages/WritePage";
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/post" element={<WritePage />} />
+          <Route path="/write/:contentname" element={<WritePage />} />
           <Route element={<Layout />}>
-            <Route path="/magazine" element={<Magazine />} />
+            <Route path="/life" element={<LifePage />} />
           </Route>
         </Routes>
       </BrowserRouter>

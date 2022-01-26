@@ -9,7 +9,22 @@ const WritePage = () => {
           발행
         </button>
       </div>
-      <Editor />
+      <div className="mx-auto" style={{ width: 860 }}>
+        <select
+          name=""
+          id=""
+          style={{
+            margin: "30px 0",
+            border: "1px solid #cccc",
+            padding: "5px 10px",
+          }}
+        >
+          <option value="">CULTURE</option>
+          <option value="">HEALTH</option>
+          <option value="">FOOD</option>
+        </select>
+        <Editor />
+      </div>
     </section>
   );
 };

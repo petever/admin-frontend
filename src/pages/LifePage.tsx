@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Magazine = () => {
+const LifePage = () => {
   return (
     <div>
-      <h2 className="text-xl">Magazine</h2>
+      <h2 className="text-xl">라이프</h2>
       <div className="flex flex-row-reverse  text-white mb-4">
-        <button type="button" className="bg-slate-600 p-2 rounded-md">
+        <Link to="/write/life" className="bg-slate-600 p-2 rounded-md">
           글쓰기
-        </button>
+        </Link>
       </div>
       <div className="flex bg-slate-600 rounded-md p-2 text-center text-white">
         <div className="flex-1">번호</div>
@@ -32,4 +33,4 @@ const Magazine = () => {
   );
 };
 
-export default Magazine;
+export default LifePage;

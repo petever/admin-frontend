@@ -44,7 +44,7 @@ const Editor = () => {
   );
 
   return (
-    <div className="max-w-4xl mx-auto ">
+    <div>
       <input
         type="text"
         className="text-3xl py-4 w-full border-b-2"
