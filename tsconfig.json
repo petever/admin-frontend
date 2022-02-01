@@ -20,10 +20,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "typeRoots": ["./node_modules/@types"],
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["./*"]
-    },
+    "baseUrl": "./src",
   },
   "include": ["./src/**/*", "images.d.ts", "jest.config.js", "setupTests.tsx"],
   "exclude": ["node_modules"]
